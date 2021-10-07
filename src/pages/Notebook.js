@@ -43,13 +43,6 @@ const Notebook = (props) => {
 
   const [submitNote] = useMutation(CREATE_NOTE_MUTATION, {
     update(proxy, result) {
-      // const data = proxy.readQuery({
-      //   query: FETCH_NOTEBOOK_QUERY,
-      //   variables: {
-      //     userId: user.id,
-      //     title: props.match.params.notebook,
-      //   },
-      // });
       proxy.writeQuery({
         query: FETCH_NOTEBOOK_QUERY,
         data: {
@@ -119,7 +112,6 @@ const Notebook = (props) => {
   });
 
   useEffect(() => {
-    console.log(data?.getNotebook?.notes);
     setNotes(data?.getNotebook?.notes);
     setNotebookId(data?.getNotebook?.id);
   }, [data]);
