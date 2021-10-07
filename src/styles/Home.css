@@ -81,6 +81,9 @@
   .logo {
     font-size: 1.8rem;
   }
+  .homepage__text {
+    padding: 7rem 3%;
+  }
 }
 @media only screen and (max-width: 445px) {
   .logo {
