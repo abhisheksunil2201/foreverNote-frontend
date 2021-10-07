@@ -1,0 +1,93 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.homeNav {
+  display: flex;
+  position: absolute;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 2rem 10rem 2rem 0;
+  width: 100vw;
+}
+.homeNav > * {
+  padding: 1rem;
+  margin: 0;
+  margin-right: 1.5rem;
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.logo {
+  font-family: "Indie Flower", cursive;
+  font-size: 3.5rem;
+  position: absolute;
+  left: 1rem;
+  user-select: none;
+  cursor: pointer;
+}
+.homeNav > a {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.homeNav > a:hover {
+  color: #529ef0;
+}
+.homepageBanner {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  display: block;
+}
+.homepage__text {
+  position: absolute;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 7rem 10rem;
+  border-radius: 20px;
+}
+.homepage__heading {
+  font-size: 60px;
+  line-height: 100%;
+}
+.homepage__para {
+  font-size: 20px;
+  line-height: 100%;
+}
+@media only screen and (max-width: 830px) {
+  .homeNav {
+    padding: 2rem 4rem 2rem 0;
+  }
+}
+@media only screen and (max-width: 730px) {
+  .homeNav {
+    padding: 2rem 2rem 2rem 0;
+  }
+  .homeNav > * {
+    font-size: 1.3rem;
+  }
+  .logo {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 630px) {
+  .homeNav > * {
+    font-size: 1rem;
+  }
+  .logo {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 445px) {
+  .logo {
+    position: unset;
+    font-size: 1.8rem;
+  }
+  .homeNav {
+    padding: 1rem 1rem 1rem 0;
+  }
+}

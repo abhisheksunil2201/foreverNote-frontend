@@ -1,0 +1,37 @@
+.login,
+.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+.formInput {
+  width: 20rem !important;
+}
+.login .showPassword {
+  height: 1.5rem;
+  position: absolute;
+  top: 55%;
+  left: 90%;
+}
+.register .showPassword {
+  height: 1.5rem;
+  position: absolute;
+  top: 54%;
+  left: 90%;
+}
+.register .showPassword1 {
+  height: 1.5rem;
+  position: absolute;
+  top: 71%;
+  left: 90%;
+}
+.register .ui.icon.input > i.icon:not(.link) {
+  pointer-events: all !important;
+  cursor: pointer !important;
+}
+.login .ui.icon.input > i.icon:not(.link) {
+  pointer-events: all !important;
+  cursor: pointer !important;
+}

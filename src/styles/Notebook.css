@@ -1,0 +1,124 @@
+.notes {
+  padding-top: 10rem;
+  margin-left: 8rem;
+  font-weight: 700;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  flex-wrap: wrap;
+}
+.note {
+  border: 2px solid black;
+  width: 22rem;
+  height: 220px;
+  border-radius: 5px;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.note__title {
+  border-bottom: 2px solid black;
+  padding: 1.5rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.note__body {
+  word-wrap: break-word;
+  padding: 1.25rem;
+  cursor: pointer;
+  max-height: 50%;
+  overflow: hidden;
+}
+.note__create {
+  text-align: center;
+  cursor: pointer;
+}
+.note__create > .icon {
+  margin-top: 30%;
+}
+.quill {
+  height: 200px;
+}
+.titleNote {
+  width: 100% !important;
+  border: 2px solid black;
+}
+.ql-toolbar {
+  border: 2px solid black !important;
+}
+.ql-container {
+  border: 2px solid black !important;
+}
+.note__footer {
+  display: flex;
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  z-index: 1;
+}
+.notes__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 8rem;
+  padding: 2rem 8rem;
+}
+.notes__icons {
+  display: flex;
+  align-items: baseline;
+}
+.notes__icons > .icon {
+  cursor: pointer;
+}
+.notes__icons > * {
+  margin-right: 10px;
+}
+@media only screen and (max-width: 1430px) {
+  .notes {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .notes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .notes {
+    margin-left: 2rem;
+  }
+}
+@media only screen and (max-width: 692px) {
+  .note {
+    width: 18rem;
+    height: 160px;
+  }
+  .notes__header {
+    padding: 2rem 4rem;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .note {
+    width: 14rem;
+    height: 160px;
+  }
+  .notes__header {
+    padding: 2rem 2rem;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .note {
+    width: 90%;
+    height: 160px;
+  }
+  .notes {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .notes__header {
+    flex-direction: column;
+  }
+  .note__create > .icon {
+    margin-top: 20%;
+  }
+}
