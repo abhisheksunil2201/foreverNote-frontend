@@ -48,6 +48,7 @@ function Login() {
           <Form.Input
             label="Username"
             placeholder="Username.."
+            style={{ color: "#fff !important" }}
             name="username"
             type="text"
             error={errors.username ? true : false}

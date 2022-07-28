@@ -1,9 +1,12 @@
 .notebooks {
   display: flex;
-  margin-left: 15rem;
+  padding-left: 15rem;
   padding-top: 15rem;
   max-width: 100vw;
+  height: 100%;
   flex-wrap: wrap;
+  background-color: black;
+  overflow-y: scroll;
 }
 .notebook {
   height: 300px;
@@ -24,11 +27,12 @@
   border-radius: 0px 20px 20px 0px;
   cursor: pointer;
   transition: all 0.2s ease;
-  border: 2px dashed black;
+  border: 2px dashed white;
+  color: white;
   text-align: center;
 }
 .notebook:hover {
-  box-shadow: 5px 5px 5px #aaaaaa;
+  box-shadow: 2px 2px 5px #6e6e6e;
 }
 .notebook__details {
   background-color: white;
@@ -44,6 +48,8 @@
 }
 @media only screen and (max-width: 660px) {
   .notebooks {
-    margin-left: 10%;
+    padding-left: 10%;
+    overflow-y: scroll;
+    padding-bottom: 3rem;
   }
 }

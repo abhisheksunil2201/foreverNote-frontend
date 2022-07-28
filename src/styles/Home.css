@@ -4,15 +4,17 @@
   align-items: center;
   justify-content: center;
   color: white;
+  background-color: black;
 }
 .homeNav {
   display: flex;
   position: absolute;
   justify-content: flex-end;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 2rem 10rem 2rem 0;
+  background-color: rgba(0, 0, 0);
+  padding: 2rem 8rem 2rem 0;
   width: 100vw;
+  z-index: 2;
 }
 .homeNav > * {
   padding: 1rem;

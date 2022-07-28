@@ -4,7 +4,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 90vh;
+  height: 100%;
+  background-color: black;
+  color: white;
+}
+form {
+  border: 1px solid gray;
+  padding: 4rem;
+  border-radius: 15px;
 }
 .formInput {
   width: 20rem !important;
@@ -34,4 +41,7 @@
 .login .ui.icon.input > i.icon:not(.link) {
   pointer-events: all !important;
   cursor: pointer !important;
+}
+.ui.form .field > label {
+  color: #fff !important;
 }

@@ -1,13 +1,17 @@
 .notes {
   padding-top: 10rem;
-  margin-left: 8rem;
+  padding-left: 8rem;
+  height: 100%;
   font-weight: 700;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   flex-wrap: wrap;
+  background-color: black;
+  overflow-y: scroll;
 }
 .note {
-  border: 2px solid black;
+  border: 2px solid white;
+  color: white;
   width: 22rem;
   height: 220px;
   border-radius: 5px;
@@ -16,7 +20,7 @@
   position: relative;
 }
 .note__title {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid white;
   padding: 1.5rem;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -86,7 +90,7 @@
 }
 @media only screen and (max-width: 768px) {
   .notes {
-    margin-left: 2rem;
+    padding-left: 2rem;
   }
 }
 @media only screen and (max-width: 692px) {
@@ -117,6 +121,7 @@
   }
   .notes__header {
     flex-direction: column;
+    padding: 0;
   }
   .note__create > .icon {
     margin-top: 20%;

@@ -11,7 +11,10 @@ function HomeNav() {
       <h1 onClick={() => history.push("/")} className="logo">
         Forever Note
       </h1>
-      <p>Welcome {user.username}</p>
+      <p>
+        Welcome,{" "}
+        {user.username.charAt(0).toUpperCase() + user.username.substr(1)}
+      </p>
       <div>
         <Link to="/" onClick={logout}>
           LOGOUT
